@@ -25,9 +25,8 @@ public class LongestCommonPrefix {
 
     private boolean hasMatch(String[] strs, int i, char ch){
 
-
-        for(int j=0;j<strs.length;j++){
-            if(i >= strs[j].length() || strs[j].charAt(i)!=ch){
+        for (String str : strs) {
+            if (i >= str.length() || str.charAt(i) != ch) {
                 return false;
             }
         }
